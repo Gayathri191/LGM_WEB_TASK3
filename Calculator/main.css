@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.input{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+button{
+    border:none;
+    background-color: white;
+    padding:1.6rem;
+    font-size: 22px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover{
+    font-weight: bold;
+}
+
+
+.output{
+    font-size: 28px;
+    padding: 25px;
+    text-align: right;
+}
+
+.result{
+    font-size: 18px;
+    padding: 25px;
+    text-align: right;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(to right,#2193b0, #6dd5ed);
+    background-image: url("background-calculator.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.calculator{
+    width: 25%;
+    border-radius: 30px;
+    overflow: hidden;
+    text-align: right;
+    box-shadow: 7px 7px 7px rgb(95, 195, 200);
+    align-items: center;
+    margin: +90px;
+    margin-left: 110px;
+    justify-content: center;
+    height: 100vh;
+}
+
+.display{
+    text-align: center;
+    text-justify: auto;
+    width: 100%;
+    height: 25vh;
+    background: rgb(40, 44, 117);
+    color: rgb(178, 239, 244);
+
+}
+
+
+
+@keyframes big{
+    0%{
+        font-size: 18px;
+    }
+    100%{
+        font-size: 30px;
+    }
+}
+
+@keyframes small{
+    0%{
+        font-size: 28px;
+    }
+    100%{
+        font-size: 18px;
+    }
+}
